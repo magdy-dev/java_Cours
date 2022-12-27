@@ -1,25 +1,22 @@
 package org.example;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+
+import javax.management.remote.rmi.RMIServerImpl_Stub;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
 
-        FileOutputStream fileOutputStream =new FileOutputStream("file.txt");
-        fileOutputStream.write("my name is marko".getBytes());
+        Methos methos= new Methos();
+        System.out.println(methos.add(3,3));
+        System.out.println( methos.add(4,5,6));
 
-        FileInputStream fileInputStream = new FileInputStream("file.txt");
-        int data;
-
-        while ((data=fileInputStream.read())!=-1){
-            System.out.println(data);
-        }
+        Child child=new Child();
+        child.add(2,2);
 
 
 
     }
+
+
 }
