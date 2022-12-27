@@ -23,11 +23,11 @@ public class Main {
 
         List<Student> list = new ArrayList<>();
         list.add(
-                new Student(1, "name", "lastName", "+262727", "magdy@gamil.com", address)
+                new Student(1, "name", "lastName", "+262727", "magdy@gamil.com", address,"m1111")
 
 
         );
-        list.add( new Student(2,"","name_1","last_name_1","mail@.come",address_sudent));
+        list.add( new Student(2,"","name_1","last_name_1","mail@.come",address_sudent,"maa66"));
 
 
         Methos methos = new Methos();

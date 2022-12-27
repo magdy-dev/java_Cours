@@ -6,26 +6,38 @@ public class Person {
     private String last_name;
     private String phone_number;
     private String email;
+    private String passport_number;
     private Address address;
 
-    public Person(int id, String name, String last_name, String phone_number, String email, Address address) {
+    public Person(int id, String name, String last_name, String phone_number, String email, Address address, String passport_number) {
         this.id = id;
         this.name = name;
         this.last_name = last_name;
         this.phone_number = phone_number;
         this.email = email;
         this.address = address;
+        this.passport_number = passport_number;
     }
 
     public Person() {
     }
 
-    public Person(int id, String name, String last_name, String phone_number, String email) {
+    public Person(int id, String name, String last_name, String phone_number, String email, String passport_number) {
         this.id = id;
         this.name = name;
         this.last_name = last_name;
         this.phone_number = phone_number;
         this.email = email;
+        this.passport_number = passport_number;
+    }
+
+    public Person(int id, String name, String last_name, String phone_number, String email) {
+
+        this.id=id;
+        this.name=name;
+        this.last_name=last_name;
+        this.phone_number=phone_number;
+        this.email=email;
     }
 
     public int getId() {
@@ -39,6 +51,13 @@ public class Person {
     public String getName() {
         return name;
     }
+
+    public String getPassport_number(){
+        return passport_number;
+    }
+     public void setPassport_number(String passport_number){
+        this.passport_number=phone_number;
+     }
 
     public void setName(String name) {
         this.name = name;
